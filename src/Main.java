@@ -4,12 +4,25 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * function to validate each amount of color(must be from 0 to 255)
+     * @param value
+     * @return
+     */
     public static int validate(int value) {
         if (value < 0) value = 0;
         else if (value > 255) value = 255;
         return value;
     }
 
+    /**
+     * function that adjusts the brightness (losers or increases it depending on the brightnessValue)
+     * of the photo from inPath and outputs it in the outPath
+     * @param inPath
+     * @param outPath
+     * @param brightnessValue
+     * @throws IOException
+     */
     public static void adjustBrightness(String inPath, String outPath, int brightnessValue) throws IOException {
         BufferedImage image = null;
 
@@ -39,6 +52,11 @@ public class Main {
         }
     }
 
+    /**
+     * main function reads user input and adjusts picture accordingly
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter file path to the jpg image you want the brightness adjusted to: ");
