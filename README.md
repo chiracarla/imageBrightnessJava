@@ -23,8 +23,8 @@ This project introduced me to basic image manipulation in Java, including:
 - Customization options for font, size, and color
 - Graphical user interface (GUI) for easier interaction
 
-##IN:
+## IN:
 ![floare_page-0001](https://github.com/user-attachments/assets/afe8ca50-7868-4969-825e-49e09a5e8ae1)
 
-##OUT:
+## OUT:
 ![out_floare](https://github.com/user-attachments/assets/b0bf19f7-3709-44df-958c-e646b4fd0b42)
